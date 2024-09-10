@@ -6,15 +6,22 @@ async function fetchNugetPackages(packageIds) {
         try {
             const response = await fetch(`${baseUrl}${packageId.toLowerCase()}/index.json`);
             const data = await response.json();
-            const latestVersion = data.items[0].items[data.items[0].items.length - 1];
+            const latestVersionItem = data.items[0].items[data.items[0].items.length - 1];
+
+            // Access the latest version details
+            const packageName = latestVersionItem.catalogEntry.id;
+            const packageVersion = latestVersionItem.catalogEntry.version;
+            const packageDescription = latestVersionItem.catalogEntry.description || 'No description available';
+            const totalDownloads = data.items.reduce((acc, curr) => acc + (curr.items ? curr.items.reduce((innerAcc, innerItem) => innerAcc + (innerItem.catalogEntry?.downloads || 0), 0) : 0), 0);
+            const projectUrl = latestVersionItem.catalogEntry.projectUrl || '#';
 
             // Create HTML for each package
             const packageHtml = `
                 <div class="nuget-package">
-                    <h3>${data.items[0].items[0].catalogEntry.id} (${latestVersion.catalogEntry.version})</h3>
-                    <p>${latestVersion.catalogEntry.description}</p>
-                    <p>Total Downloads: ${latestVersion.catalogEntry.downloads}</p>
-                    <p><a href="${latestVersion.catalogEntry.projectUrl}" target="_blank">View on GitHub</a></p>
+                    <h3>${packageName} (${packageVersion})</h3>
+                    <p>${packageDescription}</p>
+                    <p>Total Downloads: ${totalDownloads}</p>
+                    <p><a href="${projectUrl}" target="_blank">View on GitHub</a></p>
                 </div>
             `;
 
