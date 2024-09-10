@@ -299,6 +299,69 @@
 
 <!-- End of code interaction-->
 
+<!-- Beginning of tools-->
+<div class="tools-slider">
+  <div class="tools-track">
+    <img src="images/powerapps.png" alt="Power Apps" class="tool-logo">
+    <img src="images/powerautomate.png" alt="Power Automate" class="tool-logo">
+    <img src="images/dataverse.png" alt="Dataverse" class="tool-logo">
+    <img src="images/powerbi.png" alt="Power BI" class="tool-logo">
+    <img src="images/copilot.png" alt="Copilot" class="tool-logo">
+    <img src="images/azuredevops.png" alt="Azure DevOps" class="tool-logo">
+    <img src="images/git.png" alt="Git" class="tool-logo">
+    <img src="images/visualstudio.png" alt="Visual Studio Enterprise" class="tool-logo">
+    <img src="images/azure.png" alt="Azure" class="tool-logo">
+    <img src="images/docker.png" alt="Docker" class="tool-logo">
+    <img src="images/kubernetes.png" alt="Kubernetes" class="tool-logo">
+    <img src="images/xrmtools.png" alt="XRM Tools" class="tool-logo">
+    <img src="images/nuget.png" alt="NuGet" class="tool-logo">
+    <img src="images/python.png" alt="Python" class="tool-logo">
+    <img src="images/powershell.png" alt="PowerShell" class="tool-logo">
+    <img src="images/circleci.png" alt="Circle CI" class="tool-logo">
+    <img src="images/grafana.png" alt="Grafana" class="tool-logo">
+    <img src="images/prometheus.png" alt="Prometheus" class="tool-logo">
+  </div>
+</div>
+
+<!-- CSS: Styling and Animation -->
+<style>
+  .tools-slider {
+    overflow: hidden; /* Hides overflowing content */
+    width: 100%;
+    background-color: #f5f5f5; /* Background color for the slider */
+    padding: 20px 0; /* Padding for top and bottom */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .tools-track {
+    display: flex; /* Flexbox to align logos horizontally */
+    animation: slide 40s linear infinite; /* Animation settings */
+  }
+
+  .tool-logo {
+    height: 60px; /* Adjust size as needed */
+    margin: 0 30px; /* Margin around each logo */
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.2)); /* Shadow effect */
+  }
+
+  /* Keyframes for sliding animation */
+  @keyframes slide {
+    0% { transform: translateX(100%); } /* Start at the right */
+    100% { transform: translateX(-100%); } /* End at the left */
+  }
+</style>
+
+<!-- JavaScript (Optional): Duplicate the track to create an infinite loop -->
+<script>
+  const track = document.querySelector('.tools-track');
+  const trackWidth = track.scrollWidth;
+  
+  // Duplicate logos for a seamless infinite scroll effect
+  const clone = track.cloneNode(true);
+  track.appendChild(clone);
+</script>
+<!-- End of tools-->
+
 <!-- BEGIN: What’s New -->
 <div id="spotlight" class="m80-80 grey" style="display:block ; padding-bottom: 0px;">
   <div class="section">
