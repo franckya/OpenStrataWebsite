@@ -7,6 +7,7 @@ theme:
 # Moved extra_css outside of theme block
 extra_css:
   - assets/stylesheets/extra.css  # Ensure this path is correct
+  - assets/stylesheets/nuget-packages.css
 
 extra:
   social:
