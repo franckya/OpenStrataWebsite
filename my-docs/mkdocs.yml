@@ -1,7 +1,6 @@
 site_name: "Open Strata Documentation"
 theme:
   name: "material"  # You can use mkdocs-material for a similar theme
-  logo: 'images/header.png'  # Update with your logo path
   favicon: 'images/favicon.png'  # Update with your favicon path
 
   extra_css:
