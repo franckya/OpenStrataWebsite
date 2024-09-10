@@ -137,9 +137,41 @@
   </div>
   <!-- END: Home -->
 <!-- Search Section -->
+<!-- Begining of core values search-->
+<div id="dynamicMessage" style="text-align: center; margin: 40px 0; color: #333; font-size: 28px; font-weight: bold;">
+  <!-- Initial message is empty, will be updated via JavaScript -->
+</div>
+
+<!-- JavaScript for Dynamic Text Effect -->
+<script>
+  // Array of messages to display
+  const messages = ["Governance", "Automation", "Scalability", "We are Open Strata!"];
+  const messageElement = document.getElementById('dynamicMessage');
+  
+  // Time interval between messages (in milliseconds)
+  const interval = 2000; // 2 seconds
+
+  // Function to display messages one by one
+  function displayMessages() {
+    let index = 0; // Start with the first message
+    function showMessage() {
+      messageElement.textContent = messages[index]; // Update the text content
+      index++; // Move to the next message
+      if (index < messages.length) { // Check if more messages are left
+        setTimeout(showMessage, interval); // Show next message after the interval
+      }
+    }
+    showMessage(); // Start the message display loop
+  }
+
+  // Start displaying messages when the page loads
+  window.onload = displayMessages;
+</script>
+<!-- End of core values search-->
+
 <!-- Begining of nuget package search-->
 <div style="text-align: center; margin: 40px 0; color: #333; font-size: 28px; font-weight: bold;">
-  Over 3k packages downloaded from Open Strata, Start building your solution today!
+  Over 13k packages downloaded from Open Strata, Start building your solution today!
 </div>
 
 <!-- Search Section -->
