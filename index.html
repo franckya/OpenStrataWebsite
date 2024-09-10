@@ -299,6 +299,119 @@
 
 <!-- End of code interaction-->
 
+<!-- Begining of showcase graphic-->
+<div class="tools-section">
+  <h2 class="tools-title">Our Tools</h2> <!-- Title on top -->
+
+  <div class="tools-container">
+    <!-- Top Row: Left to Right -->
+    <div class="tools-slider top">
+      <div class="tools-track">
+        <!-- Add the logos -->
+        <img src="images/git.png" alt="Git" class="tool-logo">
+        <img src="images/visualstudio.png" alt="Visual Studio" class="tool-logo">
+        <img src="images/azure.png" alt="Azure" class="tool-logo">
+        <img src="images/docker.png" alt="Docker" class="tool-logo">
+        <img src="images/kubernetes.png" alt="Kubernetes" class="tool-logo">
+        <img src="images/xrmtools.png" alt="XRM Tools" class="tool-logo">
+        <img src="images/nuget.png" alt="NuGet" class="tool-logo">
+        <img src="images/python.png" alt="Python" class="tool-logo">
+      </div>
+    </div>
+
+    <!-- Centered Open Strata Logo -->
+    <div class="center-logo">
+      <img src="images/header.png" alt="Open Strata Logo" class="open-strata-logo">
+    </div>
+
+    <!-- Bottom Row: Right to Left -->
+    <div class="tools-slider bottom">
+      <div class="tools-track">
+        <!-- Add the logos -->
+        <img src="images/circleci.png" alt="Circle CI" class="tool-logo">
+        <img src="images/grafana.png" alt="Grafana" class="tool-logo">
+        <img src="images/prometheus.png" alt="Prometheus" class="tool-logo">
+        <img src="images/powerbi.png" alt="Power BI" class="tool-logo">
+        <img src="images/dataverse.png" alt="Dataverse" class="tool-logo">
+        <img src="images/copilot.png" alt="Copilot" class="tool-logo">
+        <img src="images/azuredevops.png" alt="Azure DevOps" class="tool-logo">
+        <img src="images/powershell.png" alt="PowerShell" class="tool-logo">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS: Styling and Animation -->
+<style>
+  .tools-section {
+    width: 100%;
+    background-color: #fff; /* Plain white background */
+    padding: 40px 0; /* Spacing around the section */
+    text-align: center; /* Center-align text */
+    position: relative; /* Positioning context for center logo */
+  }
+
+  .tools-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Darker text color */
+    font-weight: bold;
+  }
+
+  .tools-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the main logo */
+    gap: 50px; /* Space between rows and the centered logo */
+  }
+
+  .tools-slider {
+    overflow: hidden; /* Hide overflowing content */
+    width: 100%; /* Full width */
+    position: relative; /* Position context */
+  }
+
+  .tools-track {
+    display: flex; /* Flexbox to align logos horizontally */
+    gap: 30px; /* Spacing between logos */
+    animation: slide-left 30s linear infinite; /* Default left-to-right animation */
+  }
+
+  .tools-slider.bottom .tools-track {
+    animation: slide-right 30s linear infinite; /* Right-to-left animation for bottom row */
+  }
+
+  .tool-logo {
+    height: 60px; /* Adjust logo size */
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.1)); /* Subtle shadow effect */
+  }
+
+  .center-logo {
+    position: absolute; /* Position the logo in the middle */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for actual center */
+    z-index: 10; /* Bring to front */
+  }
+
+  .open-strata-logo {
+    height: 100px; /* Adjust logo size */
+  }
+
+  /* Keyframes for sliding animations */
+  @keyframes slide-left {
+    0% { transform: translateX(100%); } /* Start at the right */
+    100% { transform: translateX(-100%); } /* End at the left */
+  }
+
+  @keyframes slide-right {
+    0% { transform: translateX(-100%); } /* Start at the left */
+    100% { transform: translateX(100%); } /* End at the right */
+  }
+</style>
+<!-- End of showcase graphic-->
+
 <!-- BEGIN: What’s New -->
 <div id="spotlight" class="m80-80 grey" style="display:block ; padding-bottom: 0px;">
   <div class="section">
