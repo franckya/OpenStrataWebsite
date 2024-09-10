@@ -144,28 +144,30 @@
 
 <!-- JavaScript for Dynamic Text Effect -->
 <script>
-  // Array of messages to display
-  const messages = ["Governance", "Automation", "Scalability", "We are Open Strata!"];
-  const messageElement = document.getElementById('dynamicMessage');
-  
-  // Time interval between messages (in milliseconds)
-  const interval = 2000; // 2 seconds
+  document.addEventListener("DOMContentLoaded", function () { // Ensure DOM is fully loaded before script runs
+    // Array of messages to display
+    const messages = ["Governance", "Automation", "Scalability", "We are Open Strata!"];
+    const messageElement = document.getElementById('dynamicMessage');
 
-  // Function to display messages one by one
-  function displayMessages() {
-    let index = 0; // Start with the first message
-    function showMessage() {
-      messageElement.textContent = messages[index]; // Update the text content
-      index++; // Move to the next message
-      if (index < messages.length) { // Check if more messages are left
-        setTimeout(showMessage, interval); // Show next message after the interval
+    // Time interval between messages (in milliseconds)
+    const interval = 2000; // 2 seconds
+
+    // Function to display messages one by one
+    function displayMessages() {
+      let index = 0; // Start with the first message
+      function showMessage() {
+        messageElement.textContent = messages[index]; // Update the text content
+        index++; // Move to the next message
+        if (index < messages.length) { // Check if more messages are left
+          setTimeout(showMessage, interval); // Show next message after the interval
+        }
       }
+      showMessage(); // Start the message display loop
     }
-    showMessage(); // Start the message display loop
-  }
 
-  // Start displaying messages when the page loads
-  window.onload = displayMessages;
+    // Start displaying messages
+    displayMessages();
+  });
 </script>
 <!-- End of core values search-->
 
