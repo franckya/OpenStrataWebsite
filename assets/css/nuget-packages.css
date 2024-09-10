@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .nuget-block-container {
+    display: flex; /* Display items in a row */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Add space between items */
+    padding: 20px;
+    gap: 20px; /* Add gap between items */
+  }
+  
+  .nuget-block {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px; /* Adjust width as needed */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nuget-block h2 {
+    margin-top: 0;
+  }
+  
+  .badge {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .metrics, .actions {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    gap: 10px; /* Add gap between buttons */
+    margin-top: 10px;
+  }
+  
+  .metrics button, .actions button {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .metrics button:hover, .actions button:hover {
+    background-color: #e9ecef;
+  }
+  
