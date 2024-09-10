@@ -1,6 +1,16 @@
 site_name: "Open Strata Documentation"
 theme:
   name: "material"  # You can use mkdocs-material for a similar theme
+  logo: 'images/headerblack.png'  # Update with your logo path
+  favicon: 'images/favicon.png'  # Update with your favicon path
+
+  extra_css:
+    - 'assets/stylesheets/extra.css'
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Open-Strata
 nav:
   - Home: index.md
   - About Open Strata:
@@ -9,5 +19,7 @@ nav:
       - Installation:
           - Quick Start: installation/quick-start.md
           - Using Helm: installation/helm.md
+  - Blog: http://kengne.org/my-docs/blogs/  # Example link
+  - Community Group: https://open-strata.slack.com/
 docs_dir: docs
 site_dir: site

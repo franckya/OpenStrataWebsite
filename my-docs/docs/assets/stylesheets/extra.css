@@ -1,0 +1,8 @@
+.md-header-nav__title {
+    font-weight: bold;
+    font-size: 1.25em; /* Adjust to your liking */
+}
+
+.md-header-nav__button {
+    color: white; /* Adjust button color */
+}
