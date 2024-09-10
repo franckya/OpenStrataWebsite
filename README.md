@@ -1,9 +1,9 @@
-# Power CAT
-We are the Power Customer Advisory Team (Power CAT), part of the Microsoft Power Platform engineering team at Microsoft. We work with a specific group of key enterprise customers and do whatever it takes to ensure their success with Power Platform. We are a diverse group of technical architects, community managers, program managers, developers, and content creators, located all over the world, all sharing a deep passion for the possibilities of low-code. 
+# OpenStrata
+We are the Open Strata Team, an open-source initiative dedicated to creating a comprehensive framework for cloud governance and Application Lifecycle Management (ALM) within cloud environments. Open Strata is designed to help organizations efficiently manage cloud resources, enforce governance policies, ensure compliance, and streamline application development and deployment processes.
 
-Our charter includes engaging with key enterprise customers and guiding their platform implementation to success, sharing with the world what we learn from our engagements with customers in guidance and tools, and celebrating the success of our customers via compelling customer stories.
+Our charter includes engaging with key enterprise customers and guiding their cloud platform implementation to success. We aim to share the valuable insights and best practices we learn from these engagements through comprehensive guidance and tools, and to celebrate the success of our users and contributors by highlighting compelling stories and use cases.
 
-This repository contains the Power CAT website at https://microsoft.github.io/powercat.
+This repository contains the Open Strata framework and related resources, available at (https://github.com/Open-Strata).
 
 
 ## Contributing
@@ -18,12 +18,8 @@ provided by the bot. You will only need to do this once across all repos using o
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+contact [ryan.millett@74bravo.com](mailto:ryan.millett@74bravo.com) with any additional questions or comments.
 
 ## Trademarks
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+This project may contain trademarks or logos for projects, products, or services. Authorized use of any trademarks or logos must follow the appropriate guidelines. Use of any trademarks or logos in modified versions of this project must not cause confusion or imply sponsorship. Any use of third-party trademarks or logos is subject to those third-party's policies.
