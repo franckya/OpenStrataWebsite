@@ -1,42 +1,26 @@
-.nuget-packages-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 20px;
-}
-
-.nuget-package {
-    background-color: #f8f9fa;
+.package-card {
     border: 1px solid #ddd;
-    border-radius: 8px;
     padding: 20px;
-    width: 300px; /* Adjust the width as needed */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.nuget-package:hover {
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-    transform: translateY(-5px);
-}
-
-.nuget-package h3 {
-    font-size: 1.5em;
+    border-radius: 8px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Make cards inline */
+    vertical-align: top; /* Align cards vertically */
+    margin-right: 20px; /* Add spacing between cards */
+  }
+  
+  .package-card h2 {
+    font-size: 1.2em;
     margin-bottom: 10px;
-}
-
-.nuget-package p {
+  }
+  
+  .package-card p {
     margin: 5px 0;
-    font-size: 1em;
-}
-
-.nuget-package a {
-    color: #007bff;
+  }
+  
+  .package-card a {
     text-decoration: none;
-    font-weight: bold;
-}
-
-.nuget-package a:hover {
-    text-decoration: underline;
-}
+    color: #007bff;
+  }
+  
