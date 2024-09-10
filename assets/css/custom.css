@@ -1,40 +1,27 @@
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-    font-size: 16px; /* Adjust the font size as needed */
-  }
-  
-  th, td {
-    padding: 12px; /* Add padding for better spacing */
-    text-align: left; /* Align text to the left */
-    border-bottom: 1px solid #ddd; /* Add a border below each row */
-  }
-  
-  th {
-    background-color: #f8f8f8; /* Light background for headers */
-    font-weight: bold; /* Make headers bold */
-  }
-  
-  td a {
-    color: #007bff; /* Change link color */
-    text-decoration: none; /* Remove underline from links */
-  }
-  
-  td a:hover {
-    text-decoration: underline; /* Underline links on hover */
-  }
-  
-  td.details {
-    display: flex; /* Flexbox layout for details column */
-    align-items: center;
-    gap: 10px; /* Spacing between elements */
-  }
-  
-  td.details span {
-    background-color: #f1f1f1; /* Background for star counts */
-    padding: 4px 8px;
-    border-radius: 5px;
-    font-size: 14px;
-  }
-  
+.nuget-packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.nuget-package {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.nuget-package h3 {
+    margin-top: 0;
+}
+
+.nuget-package p {
+    margin: 8px 0;
+}
+
+.nuget-package a {
+    color: #007bff;
+    text-decoration: none;
+}
