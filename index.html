@@ -161,6 +161,56 @@
   }
 </script>
 <!-- End of nuget package search-->
+
+<!-- Beginning of code interaction-->
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: #1e1e2d; padding: 50px; border-radius: 10px; color: #fff; margin: 40px 0;">
+  <h2 style="color: #0ef;">Get Started with Open Strata</h2>
+  <!-- Typing animation for command -->
+  <div id="command" style="font-family: 'Courier New', monospace; font-size: 20px; padding: 10px; background-color: #222; border-radius: 5px; width: 80%; max-width: 600px; color: #0ef;">
+    <span id="typedCommand"></span>
+    <span class="cursor" style="border-right: 2px solid #0ef;"></span>
+  </div>
+  
+  <!-- Output Packages -->
+  <div id="output" style="margin-top: 20px; display: none; text-align: left; background-color: #1e1e2d; border-radius: 10px; padding: 20px; width: 80%; max-width: 600px;">
+    <p style="margin: 0; color: #0ef;">Generated Open Strata Packages:</p>
+    <ul style="list-style-type: none; padding-left: 10px; color: #fff;">
+      <li>📦 OpenStrata.Deployment.Sdk</li>
+      <li>📦 OpenStrata.NET.Templates</li>
+      <li>📦 OpenStrata.MSBuild.Nuget</li>
+      <!-- Add more packages as needed -->
+    </ul>
+  </div>
+</div>
+
+<!-- JavaScript for Typing Animation -->
+<script>
+  const command = "dotnet new openstrata";
+  let index = 0;
+  const speed = 100; // typing speed in milliseconds
+  const commandElement = document.getElementById('typedCommand');
+  const outputElement = document.getElementById('output');
+
+  function typeCommand() {
+    if (index < command.length) {
+      commandElement.innerHTML += command.charAt(index);
+      index++;
+      setTimeout(typeCommand, speed);
+    } else {
+      setTimeout(() => {
+        outputElement.style.display = 'block'; // Show output after typing finishes
+      }, 500);
+    }
+  }
+
+  // Start the typing effect on page load
+  window.onload = function() {
+    typeCommand();
+  };
+</script>
+
+<!-- Beginning of code interaction-->
+
 <!-- BEGIN: What’s New -->
 <div id="spotlight" class="m80-80 grey" style="display:block ; padding-bottom: 0px;">
   <div class="section">
