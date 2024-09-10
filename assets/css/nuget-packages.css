@@ -1,55 +1,51 @@
-body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .nuget-block-container {
-    display: flex; /* Display items in a row */
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: space-between; /* Add space between items */
-    padding: 20px;
-    gap: 20px; /* Add gap between items */
-  }
-  
-  .nuget-block {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 300px; /* Adjust width as needed */
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nuget-block h2 {
-    margin-top: 0;
-  }
-  
-  .badge {
-    display: inline-block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 12px;
-    font-size: 12px;
-    margin-bottom: 10px;
-  }
-  
-  .metrics, .actions {
+.nuget-package-cards {
     display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap */
-    gap: 10px; /* Add gap between buttons */
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .package-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .official-badge {
+    display: inline-block;
+    background-color: #0a8cff;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
     margin-top: 10px;
   }
   
-  .metrics button, .actions button {
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
-    padding: 8px 12px;
-    border-radius: 5px;
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
     font-size: 14px;
-    cursor: pointer;
   }
   
-  .metrics button:hover, .actions button:hover {
-    background-color: #e9ecef;
+  .actions button {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .actions button:hover {
+    background-color: #f0f0f0;
   }
   
