@@ -9,5 +9,5 @@ nav:
       - Installation:
           - Quick Start: installation/quick-start.md
           - Using Helm: installation/helm.md
-docs_dir: \my-docs\docs
-site_dir: \my-docs\site
+docs_dir: docs
+site_dir: site
