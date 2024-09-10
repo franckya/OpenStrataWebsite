@@ -1,0 +1,11 @@
+site_name: "Open Strata Documentation"
+theme:
+  name: "material"  # You can use mkdocs-material for a similar theme
+nav:
+  - Home: index.md
+  - About Open Strata:
+      - Overview: overview.md
+      - Getting Started: getting-started.md
+      - Installation:
+          - Quick Start: installation/quick-start.md
+          - Using Helm: installation/helm.md
