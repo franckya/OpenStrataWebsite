@@ -1,37 +1,40 @@
-.table-container {
-    margin: 2rem 0;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1rem;
-}
-
-thead {
-    background-color: #f8f9fa;
-}
-
-th, td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-}
-
-button {
-    background-color: #007bff;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+  
+  th, td {
+    padding: 12px; /* Add padding for better spacing */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Add a border below each row */
+  }
+  
+  th {
+    background-color: #f8f8f8; /* Light background for headers */
+    font-weight: bold; /* Make headers bold */
+  }
+  
+  td a {
+    color: #007bff; /* Change link color */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  td a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  
+  td.details {
+    display: flex; /* Flexbox layout for details column */
+    align-items: center;
+    gap: 10px; /* Spacing between elements */
+  }
+  
+  td.details span {
+    background-color: #f1f1f1; /* Background for star counts */
+    padding: 4px 8px;
+    border-radius: 5px;
     font-size: 14px;
-    margin: 2px;
-    cursor: pointer;
-    border-radius: 4px;
-}
+  }
+  
