@@ -6,3 +6,10 @@
 .md-header-nav__button {
     color: white; /* Adjust button color */
 }
+
+.md-footer-copyright {
+    text-align: center;
+    color: #fff; /* Set this to the color you want */
+    background-color: #000; /* Or any other background color */
+    padding: 10px 0;
+}
